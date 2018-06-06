@@ -1,0 +1,18 @@
+@import "darktheme";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in darktheme.scss
+
+.darktheme {
+  @include addons;
+  @include darktheme;
+
+}
+
+.v-app {
+  background: yellow;
+}
+.v-grid-column.Vardas {
+  color: gray;
+}
